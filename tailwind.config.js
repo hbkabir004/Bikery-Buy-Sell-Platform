@@ -1,6 +1,6 @@
-/** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
@@ -325,4 +325,4 @@ module.exports = {
     backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   plugins: [require("daisyui")],
-}
+};
