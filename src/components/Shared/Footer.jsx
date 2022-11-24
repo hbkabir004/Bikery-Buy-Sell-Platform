@@ -14,11 +14,11 @@ const Footer = () => {
                                 placeholder="Email"
                                 required
                                 type="text"
-                                className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                                className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0 focus:border-magenda-100 focus:outline-none focus:shadow-outline"
                             />
                             <button
                                 type="submit"
-                                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-magenda-100 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                             >
                                 Subscribe
                             </button>
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col justify-between pt-5 pb-10 border-t border-gray-800 sm:flex-row">
                     <p className="text-sm text-gray-500">
-                        © Copyright 2022 | Aungstrome PhotoLab | All rights reserved.
+                        © Copyright 2022 | Bookary | All rights reserved.
                     </p>
                     <div className="flex items-center mt-4 space-x-4 sm:mt-0">
                         <a
