@@ -36,7 +36,7 @@ const Navbar = () => {
                                     to="/allservices"
                                     aria-label="services"
                                     title="services"
-                                    className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                    className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-magenda-100"
                                 >
                                     Services
                                 </Link>
@@ -47,7 +47,7 @@ const Navbar = () => {
                                     to="/blog"
                                     aria-label="Blog"
                                     title="Blog"
-                                    className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                    className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-magenda-100"
                                 >
                                     Blog
                                 </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
                                                         to="/myreviews"
                                                         aria-label="My Reviews"
                                                         title="My Reviews"
-                                                        className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                        className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-magenda-100"
                                                     >
                                                         My Reviews
                                                     </Link>
@@ -72,7 +72,7 @@ const Navbar = () => {
                                                         to="/addservice"
                                                         aria-label="Add Service"
                                                         title="Add Service"
-                                                        className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                        className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-magenda-100"
                                                     >
                                                         Add Service
                                                     </Link>
@@ -93,10 +93,10 @@ const Navbar = () => {
                                 {
                                     user?.uid ?
                                         <>
-                                            <span className='mr-5 text-deep-purple-accent-400 font-semibold'>{user?.displayName}</span>
+                                            <span className='mr-5 text-magenda-100 font-semibold'>{user?.displayName}</span>
                                             <button
                                                 onClick={handleLogout}
-                                                className='px-8 py-3 font-semibold rounded-md bg-deep-purple-accent-400 hover:bg-gray-700 hover:text-white text-gray-100'>Log out</button>
+                                                className='px-8 py-3 font-semibold rounded-md bg-magenda-100 hover:bg-gray-700 hover:text-white text-gray-100'>Log out</button>
 
                                         </>
                                         :
@@ -105,13 +105,13 @@ const Navbar = () => {
                                                 to="/signin"
                                                 aria-label="Sign in"
                                                 title="Sign in"
-                                                className="font-semibold tracking-wide text-deep-purple-accent-400 transition-colors duration-200 hover:text-gray-700"
+                                                className="font-semibold tracking-wide text-magenda-100 transition-colors duration-200 hover:text-gray-700"
                                             >
                                                 Sign in
                                             </Link>
                                             <Link
                                                 to="/signup"
-                                                className="ml-5 inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                                                className="ml-5 inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md bg-magenda-100 hover:bg-gray-700 focus:shadow-outline focus:outline-none"
                                                 aria-label="Sign up"
                                                 title="Sign up"
                                             >
@@ -168,7 +168,7 @@ const Navbar = () => {
                                                 className="inline-flex items-center"
                                             >
                                                 <svg
-                                                    className="w-8 text-deep-purple-accent-400"
+                                                    className="w-8 text-magenda-100"
                                                     viewBox="0 0 24 24"
                                                     strokeLinejoin="round"
                                                     strokeWidth="2"
@@ -210,7 +210,7 @@ const Navbar = () => {
                                                     to="/allservices"
                                                     aria-label="services"
                                                     title="services"
-                                                    className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                    className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-magenda-100"
                                                 >
                                                     Services
                                                 </Link>
@@ -222,7 +222,7 @@ const Navbar = () => {
                                                     to="/blog"
                                                     aria-label="Blog"
                                                     title="Blog"
-                                                    className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                    className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-magenda-100"
                                                 >
                                                     Blog
                                                 </Link>
@@ -237,7 +237,7 @@ const Navbar = () => {
                                                                         to="/myreviews"
                                                                         aria-label="My Reviews"
                                                                         title="My Reviews"
-                                                                        className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                                        className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-magenda-100"
                                                                     >
                                                                         My Reviews
                                                                     </Link>
@@ -247,7 +247,7 @@ const Navbar = () => {
                                                                         to="/addservice"
                                                                         aria-label="Add Service"
                                                                         title="Add Service"
-                                                                        className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                                        className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-magenda-100"
                                                                     >
                                                                         Add Service
                                                                     </Link>
@@ -266,10 +266,10 @@ const Navbar = () => {
                                                     {
                                                         user?.uid ?
                                                             <>
-                                                                <span className='mr-5 text-deep-purple-accent-400 font-semibold'>{user?.displayName}</span>
+                                                                <span className='mr-5 text-magenda-100 font-semibold'>{user?.displayName}</span>
                                                                 <button
                                                                     onClick={handleLogout}
-                                                                    className='px-8 py-3 font-semibold rounded-md bg-deep-purple-accent-400 hover:bg-gray-700 hover:text-white text-gray-100'>Log out</button>
+                                                                    className='px-8 py-3 font-semibold rounded-md bg-magenda-100 hover:bg-gray-700 hover:text-white text-gray-100'>Log out</button>
                                                             </>
                                                             :
                                                             <>
@@ -277,13 +277,13 @@ const Navbar = () => {
                                                                     to="/signin"
                                                                     aria-label="Sign in"
                                                                     title="Sign in"
-                                                                    className="font-semibold tracking-wide text-deep-purple-accent-400  transition-colors duration-200 hover:text-gray-700"
+                                                                    className="font-semibold tracking-wide text-magenda-100  transition-colors duration-200 hover:text-gray-700"
                                                                 >
                                                                     Sign in
                                                                 </Link>
                                                                 <Link
                                                                     to="/signup"
-                                                                    className="ml-5 inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                                                                    className="ml-5 inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md bg-magenda-100 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                                                                     aria-label="Sign up"
                                                                     title="Sign up"
                                                                 >

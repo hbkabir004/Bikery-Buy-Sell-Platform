@@ -5,11 +5,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // backgroundImage: {
-      //   'bg': "url('https://i.ibb.co/YRtC7k1/bg.jpg')",
-      // },
+      
       fontFamily: {
-        // serif: ['Baskervville', ...defaultTheme.fontFamily.serif],
       },
       colors: {
         red: {
@@ -304,6 +301,9 @@ module.exports = {
           800: '#4e342e',
           900: '#3e2723',
         },
+        magenda:{
+          100:'#a9237a'
+        }
       },
       spacing: {
         '7': '1.75rem',
