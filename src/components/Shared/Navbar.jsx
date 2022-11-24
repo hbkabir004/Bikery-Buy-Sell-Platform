@@ -21,27 +21,13 @@ const Navbar = () => {
                     <div className="flex items-center">
                         <Link
                             to="/"
-                            aria-label="PhotoLab"
-                            title="PhotoLab"
+                            aria-label="Bookory"
+                            title="Bookory"
                             className="inline-flex items-center mr-8"
                         >
-                            <svg
-                                className="w-8 text-deep-purple-accent-400"
-                                viewBox="0 0 24 24"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeMiterlimit="10"
-                                stroke="currentColor"
-                                fill="none"
-                            >
-                                <rect x="3" y="1" width="7" height="12" />
-                                <rect x="3" y="17" width="7" height="6" />
-                                <rect x="14" y="1" width="7" height="6" />
-                                <rect x="14" y="11" width="7" height="12" />
-                            </svg>
+                            <img className='w-14' src='https://i.ibb.co/mhnffRd/logo512.png' alt=''></img>
                             <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                PhotoLab
+                                Bookory
                             </span>
                         </Link>
                         <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -177,8 +163,8 @@ const Navbar = () => {
                                         <div>
                                             <Link
                                                 to="/"
-                                                aria-label="PhotoLab"
-                                                title="PhotoLab"
+                                                aria-label="Bookory"
+                                                title="Bookory"
                                                 className="inline-flex items-center"
                                             >
                                                 <svg
@@ -197,7 +183,7 @@ const Navbar = () => {
                                                     <rect x="14" y="11" width="7" height="12" />
                                                 </svg>
                                                 <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                                    PhotoLab
+                                                    Bookory
                                                 </span>
                                             </Link>
                                         </div>
