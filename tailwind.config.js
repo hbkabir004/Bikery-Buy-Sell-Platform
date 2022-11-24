@@ -5,8 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // backgroundImage: {
+      //   'bg': "url('https://i.ibb.co/YRtC7k1/bg.jpg')",
+      // },
       fontFamily: {
-        sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+        // serif: ['Baskervville', ...defaultTheme.fontFamily.serif],
       },
       colors: {
         red: {
