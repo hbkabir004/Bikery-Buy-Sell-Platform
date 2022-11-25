@@ -53,9 +53,9 @@ const Team = () => {
                             <p className="mb-1 text-lg font-bold text-gray-100">
                                 Abir Khan
                             </p>
-                            <p className="mb-4 text-xs text-gray-100">Event Manager</p>
+                            <p className="mb-4 text-xs text-gray-100">CEO</p>
                             <p className="mb-4 text-xs tracking-wide text-gray-400">
-                                Vastly experienced in event management.
+                                Vastly experienced in eCommerce business management.
                             </p>
                             <div className="flex items-center justify-center space-x-3">
                                 <a
@@ -89,7 +89,7 @@ const Team = () => {
                             <p className="mb-1 text-lg font-bold text-gray-100">
                                 Shuvro Mojumder
                             </p>
-                            <p className="mb-4 text-xs text-gray-100">Lead Photographer</p>
+                            <p className="mb-4 text-xs text-gray-100">Lead HR</p>
                             <p className="mb-4 text-xs tracking-wide text-gray-400">
                                 Photographer & Storyteller at Photobook by Shuvro
                             </p>
@@ -125,9 +125,9 @@ const Team = () => {
                             <p className="mb-1 text-lg font-bold text-gray-100">
                                 Tomima Moumi
                             </p>
-                            <p className="mb-4 text-xs text-gray-100">Designer</p>
+                            <p className="mb-4 text-xs text-gray-100">Lead Customer Care Officer</p>
                             <p className="mb-4 text-xs tracking-wide text-gray-400">
-                                Vastly experienced in wedding decorations.
+                                Vastly experienced in event management.
                             </p>
                             <div className="flex items-center justify-center space-x-3">
                                 <a
@@ -161,9 +161,9 @@ const Team = () => {
                             <p className="mb-1 text-lg font-bold text-gray-100">
                                 Fahim Steinum
                             </p>
-                            <p className="mb-4 text-xs text-gray-100">Lead Editor.</p>
+                            <p className="mb-4 text-xs text-gray-100">Lead Data Analyst</p>
                             <p className="mb-4 text-xs tracking-wide text-gray-400">
-                                Vastly experienced in editing.
+                                Vastly experienced in data analysis.
                             </p>
                             <div className="flex items-center justify-center space-x-3">
                                 <a
