@@ -1,19 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import ProductCard from './ProductCard';
+import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import CategoryProductCard from './CategoryProductCard';
 // import useTitle from '../../../Hooks/useTitle';
 
 
-const AllProducts = () => {
+const CategoryProducts = () => {
+    // const products = useLoaderData();
+    // console.log(products);
     // useTitle('PhotoLab | Products');
-    const [allProducts, setAllProducts] = useState([]);
-    useEffect(() => {
-        fetch(`http://localhost:5000/allproducts`)
-            .then(res => res.json())
-            .then(data => setAllProducts(data))
-            .catch(error => console.log(error))
-    }, [])
+    // const [categoryProducts, setCategoryProducts] = useState([]);
+    // useEffect(() => {
+    //     fetch(`http://localhost:3000/allproducts/category/${id}`)
+    //         .then(res => res.json())
+    //         .then(data => setCategoryProducts(data))
+    //         .catch(error => console.log(error))
+    // }, [])
 
-
+    const products = useLoaderData();
 
     return (
         <div>
@@ -54,10 +57,10 @@ const AllProducts = () => {
 
                 <div className="grid gap-5 row-gap-5 mb-8 lg:grid-cols-3 sm:grid-cols-2">
                     {
-                        allProducts.map(allProduct => <ProductCard
-                            key={allProduct.product_id}
-                            allProduct={allProduct}
-                        ></ProductCard>)
+                        products.map(product => <CategoryProductCard
+                            key={product.product_id}
+                            categoryProduct={product}
+                        ></CategoryProductCard>)
                     }
                 </div>
 
@@ -66,4 +69,4 @@ const AllProducts = () => {
     );
 };
 
-export default AllProducts;
+export default CategoryProducts;

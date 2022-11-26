@@ -30,9 +30,12 @@ const CategoryCard = ({ allCategory }) => {
 
 
                     <div className="flex-grow border border-t-0 rounded-b">
-                        <div className="p-5">
-                            <h6 className="mb-2 font-semibold text-2xl leading-5 hover:text-deep-purple-accent-400">
+                        <div className="p-5 shadow-lg bg-slate-50 rounded-md">
+                            <h4 className="mb-2 font-semibold text-2xl leading-5 hover:text-magenda-100">
                                 {name}
+                            </h4>
+                            <h6 className="mb-2 font-semibold text-sm leading-5 hover:text-magenda-100">
+                                Total Products: {total}
                             </h6>
                             {/* <p className="text-sm text-gray-900">
                                 {description.slice(0, 100)}...
@@ -40,7 +43,7 @@ const CategoryCard = ({ allCategory }) => {
 
                             <div className='flex justify-end align-middle'>
                                 <Link to={`/categories/${category_id}`}>
-                                    <button type="button" class="focus:outline-none text-white bg-deep-purple-accent-400 hover:bg-gray-400 hover:text-black  focus:ring-4 font-semibold rounded-md text-sm px-5 py-2.5 mb-2">View Details</button>
+                                    <button type="button" class="focus:outline-none text-white bg-magenda-100 hover:bg-gray-400 hover:text-black  focus:ring-4 font-semibold rounded-md text-sm px-5 py-2.5 mb-2">View Details</button>
                                 </Link>
                             </div>
 

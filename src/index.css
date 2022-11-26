@@ -13,3 +13,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+bg {
+  background-color: rgba(185, 185, 185, 0);
+}

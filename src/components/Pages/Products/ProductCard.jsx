@@ -31,7 +31,7 @@ const ProductCard = ({ allProduct }) => {
 
                     <div className="flex-grow border border-t-0 rounded-b">
                         <div className="p-5">
-                            <h6 className="mb-2 font-semibold text-2xl leading-5 hover:text-deep-purple-accent-400">
+                            <h6 className="mb-2 font-semibold text-2xl leading-5 hover:text-magenda-100">
                                 {name}
                             </h6>
                             <p className="text-sm text-gray-900">
@@ -39,8 +39,9 @@ const ProductCard = ({ allProduct }) => {
                             </p>
 
                             <div className='flex justify-end align-middle'>
-                                <Link to={`/allproducts/${product_id}`}>
-                                    <button type="button" class="focus:outline-none text-white bg-deep-purple-accent-400 hover:bg-gray-400 hover:text-black  focus:ring-4 font-semibold rounded-md text-sm px-5 py-2.5 mb-2 mt-5">View Details</button>
+                                {/* to={`/allproducts/${product_id}`} */}
+                                <Link >
+                                    <button type="button" class="focus:outline-none text-white bg-magenda-100 hover:bg-gray-400 hover:text-black  focus:ring-4 font-semibold rounded-md text-sm px-5 py-2.5 mb-2 mt-5">View Details</button>
                                 </Link>
                             </div>
 
