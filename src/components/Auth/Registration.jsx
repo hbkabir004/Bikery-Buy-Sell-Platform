@@ -35,7 +35,7 @@ const Registration = () => {
             .then(result => {
                 console.log(result.user)
 
-                // const handleUpdateUserProfile = (name, photoURL) => {
+
                 const profile = {
                     displayName: name,
                     photoURL: photoURL
@@ -50,9 +50,7 @@ const Registration = () => {
                     .catch(error => {
                         toast.error(error.message)
                     })
-                // }
 
-                console.log('this->', name, photoURL);
             })
             .catch(error => toast.error(error.message))
     }
