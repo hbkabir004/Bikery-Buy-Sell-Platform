@@ -6,7 +6,7 @@ const Banner = () => {
             <div className="dark:bg-violet-400" style={{ backgroundImage: `url('https://i.ibb.co/Htf22gY/the-race-club-speakeasy-roma-6.png')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                 <div className="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-3">
                     <h1 className="text-5xl font-bold leading-none sm:text-6xl xl:max-w-3xl text-white">Buy and Sell your <span className='text-magenda-100'>BIKES' Parts</span> for the best price</h1>
-                    <p className="mt-6 mb-8 text-xl sm:mb-12 xl:max-w-3xl text-white">From applied literature to educational resources, we have a lot of books to offer you. We provide only the best books from authentic buyers to fruitful sellers.</p>
+                    <p className="mt-6 mb-8 text-xl sm:mb-12 xl:max-w-3xl text-white">From secondhand MotorBike to custom bike parts, we have a lot of services to offer you. We provide only the best bikes and bikes' part from authentic buyers to fruitful sellers.</p>
 
                 </div>
             </div>
