@@ -302,7 +302,7 @@ module.exports = {
           900: '#3e2723',
         },
         magenda:{
-          100:'#a92278'
+          100:'#f3921f'
         }
       },
       spacing: {

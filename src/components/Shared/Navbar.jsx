@@ -21,13 +21,13 @@ const Navbar = () => {
                     <div className="flex items-center">
                         <Link
                             to="/"
-                            aria-label="Bookory"
-                            title="Bookory"
+                            aria-label="Bikery"
+                            title="Bikery"
                             className="inline-flex items-center mr-8"
                         >
-                            <img className='w-14' src='https://i.ibb.co/mhnffRd/logo512.png' alt=''></img>
-                            <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                Bookory
+                            <img className='w-5' src='https://i.ibb.co/S6Xsr52/the-race-club-speakeasy-roma-6.png' alt=''></img>
+                            <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase hover:text-magenda-100">
+                                Bikery
                             </span>
                         </Link>
                         <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -163,14 +163,14 @@ const Navbar = () => {
                                         <div>
                                             <Link
                                                 to="/"
-                                                aria-label="Bookory"
-                                                title="Bookory"
+                                                aria-label="Bikery"
+                                                title="Bikery"
                                                 className="inline-flex items-center"
                                             >
-                                                <img className='w-10' src='https://i.ibb.co/mhnffRd/logo512.png' alt=''></img>
+                                                <img className='w-5' src='https://i.ibb.co/S6Xsr52/the-race-club-speakeasy-roma-6.png' alt=''></img>
 
-                                                <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                                    Bookory
+                                                <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase hover:text-magenda-100">
+                                                    Bikery
                                                 </span>
                                             </Link>
                                         </div>

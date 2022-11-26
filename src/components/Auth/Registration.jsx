@@ -1,7 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+
 import { AuthContext } from '../../contexts/UserContext';
+import useToken from '../../hooks/useToken';
 // import useTitle from '../../Hooks/useTitle';
 
 
@@ -10,7 +12,12 @@ const Registration = () => {
     const navigate = useNavigate()
     const location = useLocation()
     const from = location.state?.from?.pathname || '/'
-    const { createUser, updateUserProfile, verifyEmail, signInWithGoogle, signInWithGithub, signInWithFacebook } = useContext(AuthContext)
+    const { createUser, updateUserProfile, signInWithGoogle, signInWithGithub, signInWithFacebook } = useContext(AuthContext)
+    const [createdUserEmail, setCreatedUserEmail] = useState('');
+    const [token] = useToken(createdUserEmail);
+    if (token) {
+        navigate('/');
+    }
 
     // // Signup using Email & Pass
     const handleSubmit = event => {
@@ -37,17 +44,8 @@ const Registration = () => {
                 //2. Update Name
                 updateUserProfile(profile)
                     .then(() => {
-                        toast.success('Profile Updated')
-
-                        //3. Email verification
-                        verifyEmail()
-                            .then(() => {
-                                toast.success('Please check your email for verification link')
-                                navigate(from, { replace: true })
-                            })
-                            .catch(error => {
-                                toast.error(error.message)
-                            })
+                        toast.success('Profile Updated');
+                        saveUser(name, email);
                     })
                     .catch(error => {
                         toast.error(error.message)
@@ -79,6 +77,22 @@ const Registration = () => {
             console.log(result.user);
             navigate(from, { replace: true })
         })
+    }
+
+    const saveUser = (name, email) => {
+        const user = { name, email };
+        fetch(`http://localhost:5000/users`, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then(res => res.json())
+            .then(data => {
+                setCreatedUserEmail(email);
+            })
+
     }
 
     return (
