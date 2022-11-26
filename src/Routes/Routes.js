@@ -7,6 +7,7 @@ import AllProducts from "../components/Pages/Products/AllProducts";
 import CategoryProducts from "../components/Pages/Products/CategoryProducts";
 import ErrorPage from "../components/Shared/ErrorPage";
 import Main from "../layout/Main";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -30,13 +31,13 @@ const router = createBrowserRouter([
                 element: <Registration></Registration>
             },
             {
-                path: '/categories/:id',
-                element: <CategoryProducts></CategoryProducts>,
-                loader: ({ params }) => fetch(`http://localhost:5000/categories/${params.id}`)
-            },
-            {
                 path: '/allproducts',
                 element: <AllProducts></AllProducts>
+            },
+            {
+                path: '/categories/:id',
+                element: <PrivateRoute><CategoryProducts></CategoryProducts></PrivateRoute>,
+                loader: ({ params }) => fetch(`http://localhost:5000/categories/${params.id}`)
             },
             {
                 path: '/blog',

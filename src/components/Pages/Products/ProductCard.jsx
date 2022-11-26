@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 const ProductCard = ({ allProduct }) => {
-    const { product_id, name, img, description, minimum, available, price } = allProduct;
+    const { name, img, description } = allProduct;
     return (
 
         <PhotoProvider
