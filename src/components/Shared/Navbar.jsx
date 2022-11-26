@@ -33,12 +33,12 @@ const Navbar = () => {
                         <ul className="flex items-center hidden space-x-8 lg:flex">
                             <li>
                                 <Link
-                                    to="/allservices"
-                                    aria-label="services"
-                                    title="services"
+                                    to="/allcategories"
+                                    aria-label="categories"
+                                    title="categories"
                                     className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-magenda-100"
                                 >
-                                    Services
+                                    Categories
                                 </Link>
                             </li>
 
@@ -194,12 +194,12 @@ const Navbar = () => {
                                         <ul className="space-y-4">
                                             <li>
                                                 <Link
-                                                    to="/allservices"
-                                                    aria-label="services"
-                                                    title="services"
+                                                    to="/allcategories"
+                                                    aria-label="categories"
+                                                    title="categories"
                                                     className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-magenda-100"
                                                 >
-                                                    Services
+                                                    Categories
                                                 </Link>
                                             </li>
 
