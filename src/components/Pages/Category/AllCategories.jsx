@@ -7,7 +7,7 @@ const AllCategories = () => {
     // useTitle('PhotoLab | Categories');
     const [allCategories, setAllCategories] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/categories/`)
+        fetch(`https://server-rose.vercel.app/categories/`)
             .then(res => res.json())
             .then(data => setAllCategories(data))
             .catch(error => console.log(error))

@@ -7,7 +7,7 @@ const AllProducts = () => {
     // useTitle('PhotoLab | Products');
     const [allProducts, setAllProducts] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/allproducts`)
+        fetch(`https://server-rose.vercel.app/allproducts`)
             .then(res => res.json())
             .then(data => setAllProducts(data))
             .catch(error => console.log(error))
