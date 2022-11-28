@@ -57,7 +57,7 @@ const Navbar = () => {
                                     {
                                         user?.uid ?
                                             <>
-                                                <span className='mr-3'>
+                                                {/* <span className='mr-3'>
                                                     <Link
                                                         to="/myreviews"
                                                         aria-label="My Reviews"
@@ -66,7 +66,7 @@ const Navbar = () => {
                                                     >
                                                         My Reviews
                                                     </Link>
-                                                </span>
+                                                </span> */}
                                                 {/* <span className='ml-3'>
                                                     <Link
                                                         to="/addproduct"
@@ -229,7 +229,7 @@ const Navbar = () => {
                                                     {
                                                         user?.uid ?
                                                             <>
-                                                                <li>
+                                                                {/* <li>
                                                                     <Link
                                                                         to="/myreviews"
                                                                         aria-label="My Reviews"
@@ -238,7 +238,7 @@ const Navbar = () => {
                                                                     >
                                                                         My Reviews
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                                 {/* <li className='mt-4'>
                                                                     <Link
                                                                         to="/addproduct"
