@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { AuthContext } from '../../../contexts/UserContext';
+import { AuthContext } from '../../../contexts/AuthProvider';
 
 const BookingModal = () => {
     const bookedProducts = useLoaderData();

@@ -2,7 +2,7 @@ import { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { AuthContext } from '../../contexts/UserContext';
+import { AuthContext } from '../../contexts/AuthProvider';
 // import useTitle from '../../Hooks/useTitle';
 
 const SignIn = () => {

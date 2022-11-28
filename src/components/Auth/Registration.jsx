@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-import { AuthContext } from '../../contexts/UserContext';
+import { AuthContext } from '../../contexts/AuthProvider';
 import useToken from '../../hooks/useToken';
 // import useTitle from '../../Hooks/useTitle';
 
