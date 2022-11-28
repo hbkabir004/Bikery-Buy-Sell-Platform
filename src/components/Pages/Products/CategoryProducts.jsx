@@ -1,21 +1,11 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import useTitle from '../../../hooks/useTitle';
 import CategoryProductCard from './CategoryProductCard';
-// import useTitle from '../../../Hooks/useTitle';
 
 
 const CategoryProducts = () => {
-    // const products = useLoaderData();
-    // console.log(products);
-    // useTitle('PhotoLab | Products');
-    // const [categoryProducts, setCategoryProducts] = useState([]);
-    // useEffect(() => {
-    //     fetch(`http://localhost:3000/allproducts/category/${id}`)
-    //         .then(res => res.json())
-    //         .then(data => setCategoryProducts(data))
-    //         .catch(error => console.log(error))
-    // }, [])
-
+    useTitle('Bikery | Categories');
     const products = useLoaderData();
 
     return (

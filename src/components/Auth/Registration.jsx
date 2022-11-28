@@ -1,14 +1,12 @@
 import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-
 import { AuthContext } from '../../contexts/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 import useToken from '../../hooks/useToken';
-// import useTitle from '../../Hooks/useTitle';
-
 
 const Registration = () => {
-    // useTitle('PhotoLab | SignUp')
+    useTitle('Bikery | SignUp');
     const navigate = useNavigate()
     const location = useLocation()
     const from = location.state?.from?.pathname || '/'

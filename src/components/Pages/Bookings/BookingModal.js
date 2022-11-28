@@ -2,8 +2,10 @@ import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../../contexts/AuthProvider';
+import useTitle from '../../../hooks/useTitle';
 
 const BookingModal = () => {
+    useTitle('Bikery | Book a Product');
     const bookedProducts = useLoaderData();
     const {name, resale_price} = bookedProducts;
     const {user} = useContext(AuthContext);

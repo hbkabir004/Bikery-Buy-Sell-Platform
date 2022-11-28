@@ -3,8 +3,10 @@ import { Link, Outlet } from 'react-router-dom';
 import Navbar from '../components/Shared/Navbar';
 import { AuthContext } from '../contexts/AuthProvider';
 import useAdmin from '../hooks/useAdmin';
+import useTitle from '../hooks/useTitle';
 
 const DashboardLayout = () => {
+    useTitle('Bikery | Dashboard');
     const { user } = useContext(AuthContext);
     const [isAdmin] = useAdmin(user?.email)
     return (

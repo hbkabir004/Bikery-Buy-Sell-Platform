@@ -10,17 +10,6 @@ const CategoryProductCard = ({ categoryProduct }) => {
     // console.log(products);
     const { product_id, name, img, description, resale_price, used, original_price, location, date } = categoryProduct;
 
-    // const [categoryProducts, setCategoryProducts] = useState([]);
-    // useEffect(() => {
-    //     fetch(`http://localhost:3000/allproducts/category/${category_id}`)
-    //         .then(res => res.json())
-    //         .then(data => setCategoryProducts(data))
-    //         .catch(error => console.log(error))
-    // }, [])
-
-    // const { product_id, name, img } = categoryProducts;
-    // console.log(categoryProducts);
-
 
     return (
 
@@ -79,7 +68,6 @@ const CategoryProductCard = ({ categoryProduct }) => {
                                 <Link to={`/products/${product_id}`}>
                                     <button
                                         type='button'
-                                        // onClick={() => setSelectedProduct(categoryProduct)}
                                         htmlFor="booking-modal"
                                         class="focus:outline-none text-white bg-magenda-100 hover:bg-gray-400 hover:text-black  focus:ring-4 font-semibold rounded-md text-sm px-5 py-2.5 mb-2 mt-5">
                                         Book Now

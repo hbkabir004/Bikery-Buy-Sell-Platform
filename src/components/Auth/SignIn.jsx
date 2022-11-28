@@ -3,9 +3,10 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from '../../contexts/AuthProvider';
-// import useTitle from '../../Hooks/useTitle';
+import useTitle from '../../hooks/useTitle';
 
 const SignIn = () => {
+    useTitle('Bikery | SignIn');
     const [userEmail, setUserEmail] = useState('');
     const navigate = useNavigate();
     const location = useLocation();

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import CategoryCard from './CategoryCard';
-// import useTitle from '../../../Hooks/useTitle';
+
 
 
 const AllCategories = () => {
-    // useTitle('PhotoLab | Categories');
+
     const [allCategories, setAllCategories] = useState([]);
     useEffect(() => {
         fetch(`https://server-rose.vercel.app/categories/`)

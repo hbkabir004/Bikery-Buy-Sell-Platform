@@ -2,8 +2,10 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../../contexts/AuthProvider';
+import useTitle from '../../../hooks/useTitle';
 
 const AddService = () => {
+    useTitle('Bikery | Add a Product');
     const { user } = useContext(AuthContext);
     const handleProduct = event => {
         event.preventDefault();
