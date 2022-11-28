@@ -40,6 +40,7 @@ const BookingModal = () => {
         if(data.acknowledged){
             // setSelectedProduct(null);
             toast.success('Booking Confirmed!');
+            form.reset();
         }
         else{
             toast.error(data.message);
@@ -48,8 +49,8 @@ const BookingModal = () => {
     }
 
     return (
-        <>
-                    <h3 className="text-lg text-center font-bold text-magenda-100">BOOKING FORM</h3>
+        <div className='my-20 mx-64'>
+                    <h3 className="text-2xl text-center font-bold text-magenda-100">BOOKING FORM</h3>
                     <form onSubmit={handleBooking} className='mx-96 grid grid-cols-1 gap-3 mt-8'>
                         <span>User Name:</span> <input name='name' type="text"  placeholder="Full Name" defaultValue={user?.displayName} className="input input-bordered w-full" disabled/>
                         User Email: <input name='email' type="text"  placeholder="Email" defaultValue={user?.email} className="input input-bordered w-full" disabled/>
@@ -61,7 +62,7 @@ const BookingModal = () => {
                         <input name='location' type="text" placeholder="Meeting Location" className="input input-bordered w-full" />
                         <input type="submit" value="SUBMIT" className='btn -btn-accent w-full w-max-xs' />
                     </form>
-        </>
+        </div>
     );
 };
 
