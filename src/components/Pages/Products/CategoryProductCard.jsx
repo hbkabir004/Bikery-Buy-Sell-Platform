@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import { Link } from 'react-router-dom';
@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 const CategoryProductCard = ({ categoryProduct }) => {
-
+    const [selectedProduct, setSelectedProduct] = useState(null);
     // console.log(products);
     const { product_id, name, img, description, resale_price, used, original_price, location, date } = categoryProduct;
 
@@ -77,7 +77,12 @@ const CategoryProductCard = ({ categoryProduct }) => {
 
                             <div className='flex justify-center align-middle'>
                                 <Link to={`/products/${product_id}`}>
-                                    <button type="button" class="focus:outline-none text-white bg-magenda-100 hover:bg-gray-400 hover:text-black  focus:ring-4 font-semibold rounded-md text-sm px-5 py-2.5 mb-2 mt-5">Book Now</button>
+                                    <button
+                                        // onClick={() => setSelectedProduct(categoryProduct)}
+                                        htmlFor="booking-modal"
+                                        class="btn focus:outline-none text-white bg-magenda-100 hover:bg-gray-400 hover:text-black  focus:ring-4 font-semibold rounded-md text-sm px-5 py-2.5 mb-2 mt-5">
+                                        Book Now
+                                    </button>
                                 </Link>
                             </div>
 

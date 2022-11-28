@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Registration from '../components/Auth/Registration';
 import SignIn from '../components/Auth/SignIn';
 import Blog from "../components/Pages/Blog";
+import BookingModal from "../components/Pages/Bookings/BookingModal";
 import Home from "../components/Pages/Home/Home";
 import AllProducts from "../components/Pages/Products/AllProducts";
 import CategoryProducts from "../components/Pages/Products/CategoryProducts";
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
                 path: '/categories/:id',
                 element: <PrivateRoute><CategoryProducts></CategoryProducts></PrivateRoute>,
                 loader: ({ params }) => fetch(`https://server-rose.vercel.app/categories/${params.id}`)
+            },
+            {
+                path: '/products/:id',
+                element: <PrivateRoute><BookingModal></BookingModal></PrivateRoute>,
+                loader: ({ params }) => fetch(`https://server-rose.vercel.app/products/${params.id}`)
             },
             {
                 path: '/blog',
