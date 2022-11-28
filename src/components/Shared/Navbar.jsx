@@ -69,12 +69,22 @@ const Navbar = () => {
                                                 </span>
                                                 <span className='ml-3'>
                                                     <Link
-                                                        to="/addservice"
-                                                        aria-label="Add Service"
-                                                        title="Add Service"
+                                                        to="/addproduct"
+                                                        aria-label="Add product"
+                                                        title="Add product"
                                                         className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-magenda-100"
                                                     >
-                                                        Add Service
+                                                        Add product
+                                                    </Link>
+                                                </span>
+                                                <span className='ml-3'>
+                                                    <Link
+                                                        to="/dashboard"
+                                                        aria-label="Sign in"
+                                                        title="Sign in"
+                                                        className="font-semibold tracking-wide hover:text-magenda-100 transition-colors duration-200 text-gray-700"
+                                                    >
+                                                        Dashboard
                                                     </Link>
                                                 </span>
                                             </>
@@ -231,12 +241,22 @@ const Navbar = () => {
                                                                 </li>
                                                                 <li className='mt-4'>
                                                                     <Link
-                                                                        to="/addservice"
-                                                                        aria-label="Add Service"
-                                                                        title="Add Service"
+                                                                        to="/addproduct"
+                                                                        aria-label="Add product"
+                                                                        title="Add product"
                                                                         className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-magenda-100"
                                                                     >
-                                                                        Add Service
+                                                                        Add product
+                                                                    </Link>
+                                                                </li>
+                                                                <li className='mt-4'>
+                                                                    <Link
+                                                                        to="/dashboard"
+                                                                        aria-label="Sign in"
+                                                                        title="Sign in"
+                                                                        className="font-semibold tracking-wide hover:text-magenda-100 transition-colors duration-200 text-gray-700"
+                                                                    >
+                                                                        Dashboard
                                                                     </Link>
                                                                 </li>
                                                             </>

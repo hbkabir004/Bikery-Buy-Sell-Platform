@@ -18,7 +18,7 @@ import app from '../firebase/firebase.init'
   const auth = getAuth(app)
   export const AuthContext = createContext()
   
-  const UserContext = ({ children }) => {
+const AuthProvider = ({ children }) => {
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
     const facebokkProvider = new FacebookAuthProvider();
@@ -114,4 +114,4 @@ import app from '../firebase/firebase.init'
     )
   }
   
-  export default UserContext
+  export default AuthProvider

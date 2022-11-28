@@ -5,6 +5,7 @@ import Blog from "../components/Pages/Blog";
 import BookingModal from "../components/Pages/Bookings/BookingModal";
 import AllUsers from "../components/Pages/Dashboard/AllUsers";
 import Home from "../components/Pages/Home/Home";
+import AddProduct from "../components/Pages/Products/AddProduct";
 import AllProducts from "../components/Pages/Products/AllProducts";
 import CategoryProducts from "../components/Pages/Products/CategoryProducts";
 import ErrorPage from "../components/Shared/ErrorPage";
@@ -21,10 +22,6 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
-            },
-            {
-                path: '*',
-                element: <ErrorPage></ErrorPage>
             },
             {
                 path: '/signin',
@@ -52,6 +49,14 @@ const router = createBrowserRouter([
                 path: '/blog',
                 element: <Blog></Blog>
             },
+            // {
+            //     path: '/blog',
+            //     element: <Blog></Blog>
+            // },
+            {
+                path: '*',
+                element: <ErrorPage></ErrorPage>
+            },
         ],
     },
     {
@@ -66,10 +71,10 @@ const router = createBrowserRouter([
                 path: '/dashboard/allusers',
                 element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
             },
-            // {
-            //     path: '/dashboard/add-a-doctor',
-            //     element: <AdminRoute><AddADoctor></AddADoctor></AdminRoute>
-            // },
+            {
+                path: '/dashboard/add-a-product',
+                element: <AddProduct></AddProduct>
+            },
         ]
     }
 ])
