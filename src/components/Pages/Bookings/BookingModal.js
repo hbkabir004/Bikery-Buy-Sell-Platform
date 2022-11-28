@@ -51,9 +51,9 @@ const BookingModal = () => {
     }
 
     return (
-        <div className='my-20 mx-64'>
+        <div className='my-20 lg:mx-64 mx-12'>
                     <h3 className="text-2xl text-center font-bold text-magenda-100">BOOKING FORM</h3>
-                    <form onSubmit={handleBooking} className='mx-96 grid grid-cols-1 gap-3 mt-8'>
+                    <form onSubmit={handleBooking} className='lg:mx-96 grid grid-cols-1 gap-3 mt-8'>
                         <span>User Name:</span> <input name='name' type="text"  placeholder="Full Name" defaultValue={user?.displayName} className="input input-bordered w-full" disabled/>
                         User Email: <input name='email' type="text"  placeholder="Email" defaultValue={user?.email} className="input input-bordered w-full" disabled/>
                         {/* Item Name */}
