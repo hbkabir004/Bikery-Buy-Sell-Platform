@@ -31,7 +31,7 @@ const Navbar = () => {
                             </span>
                         </Link>
                         <ul className="flex items-center hidden space-x-8 lg:flex">
-                            <li>
+                            {/* <li>
                                 <Link
                                     to="/allproducts"
                                     aria-label="products"
@@ -40,7 +40,7 @@ const Navbar = () => {
                                 >
                                     Products
                                 </Link>
-                            </li>
+                            </li> */}
 
                             <li>
                                 <Link
@@ -67,7 +67,7 @@ const Navbar = () => {
                                                         My Reviews
                                                     </Link>
                                                 </span>
-                                                <span className='ml-3'>
+                                                {/* <span className='ml-3'>
                                                     <Link
                                                         to="/addproduct"
                                                         aria-label="Add product"
@@ -76,7 +76,7 @@ const Navbar = () => {
                                                     >
                                                         Add product
                                                     </Link>
-                                                </span>
+                                                </span> */}
                                                 <span className='ml-3'>
                                                     <Link
                                                         to="/dashboard"
@@ -202,7 +202,7 @@ const Navbar = () => {
                                     </div>
                                     <nav>
                                         <ul className="space-y-4">
-                                            <li>
+                                            {/* <li>
                                                 <Link
                                                     to="/allproducts"
                                                     aria-label="products"
@@ -211,7 +211,7 @@ const Navbar = () => {
                                                 >
                                                     Products
                                                 </Link>
-                                            </li>
+                                            </li> */}
 
 
                                             <li>
@@ -239,7 +239,7 @@ const Navbar = () => {
                                                                         My Reviews
                                                                     </Link>
                                                                 </li>
-                                                                <li className='mt-4'>
+                                                                {/* <li className='mt-4'>
                                                                     <Link
                                                                         to="/addproduct"
                                                                         aria-label="Add product"
@@ -248,7 +248,7 @@ const Navbar = () => {
                                                                     >
                                                                         Add product
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                                 <li className='mt-4'>
                                                                     <Link
                                                                         to="/dashboard"
