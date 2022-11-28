@@ -1,10 +1,10 @@
-# Bikery Client Side Repository (Assignment-12)
+# PhotoLab Client Side Repository (Assignment-11)
 
-React.js Web Application with firebase authentication for a MotorBike Manufacturing ReSale company to expose their services and interact with their clients. Made using React.js, Tailwind CSS and React Router DOM, MongoDB, and Google firebase Auth.
+React.js Web Application with firebase authentication for a professional wedding photographer company to expose their services and get reviewed by their clients. Made using React.js, Tailwind CSS and React Router DOM, MongoDB and Google firebase Auth.
 
 ## Live Link
 
-Hosted in Firebase -> [Bikery Website](https://bookory-c83fc.web.app/)
+Hosted in Firebase -> [PhotoLab Website](https://photolab-a9b6f.web.app/)
 
 ## Context API
 
@@ -26,7 +26,6 @@ Documentation Link -> [Link](https://www.mongodb.com/docs/drivers/node/current/u
 
 Tailwind Components ->
 [Kitwind](https://kitwind.io/products/kometa/components)
-[daisyUI](https://daisyui.com/components/)
 
 ## Other Resources
 
