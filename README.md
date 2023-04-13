@@ -1,4 +1,4 @@
-# Bikery Client Side Repository (Assignment-12)
+# Bikery Client Side Repository
 
 React.js Web Application with firebase authentication for a MotorBike Manufacturing ReSale company to expose their services and interact with their clients. Made using React.js, Tailwind CSS and React Router DOM, MongoDB, and Google firebase Auth.
 
